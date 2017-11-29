@@ -1,0 +1,464 @@
+<html>
+	<head>
+		<title>DS&Fitz - Medical Cannabis</title>
+		
+		<meta name="description" content="DS&Fitz is a Canadian line of premium medical cannabis. We are committed to supporting Canadian social enterprises in their mission to change lives and make an impact in our communties.">
+		<meta name="keywords" content="Medical Cannabis,Cannabis">
+		<meta name="robots" content="index">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/material-components-web.min.css">
+		<link rel="stylesheet" type="text/css" href="css/mdc.textfield.min.css">
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+		
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/material-components-web.min.js"></script>
+		<script type="text/javascript" src="js/mdc.textfield.min.js"></script>
+		<script type="text/javascript" src="js/slick.min.js"></script>
+		<script type="text/javascript" src="js/jSignature.min.js"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<div id="dialog" class="center">
+			<p></p>
+			<a href="javascript:void(0)" class="button orange-button center" onclick="hideDialog()">CLOSE</a>
+		</div>
+		
+		<div id="pages">
+			<div id="navbar">
+				<div style="float: left; width: 20%;">
+					<a href="javascript:void(0)" onclick="goToPage(0)"><img id="logo" src="img/DS&Fitz Logo.png" /></a>
+				</div>
+				<div id="navbar-links">
+					<a href="javascript:void(0)" class="navbar-link" onclick="goToPage(1)">impact</a>
+					<a href="javascript:void(0)" class="navbar-link" onclick="goToPage(2)">shop</a>
+					<a href="javascript:void(0)" class="navbar-link" onclick="goToPage(3)">register</a>
+					<a href="https://shop.thehydropothecary.com/login" class="navbar-link">log in</a>
+					<a href="https://medium.com/@adam_271" class="navbar-link">blog</a>
+				</div>
+			</div>
+			<div id="intro" class="page intro">
+				<!--<div id="mission">
+					<p class="small-text">DS&Fitz is a Canadian line of premium medical cannabis. We are committed to supporting Canadian social enterprises in their mission to change lives and make an impact in our communties.</p>
+				</div>-->
+				<div id="intro-central" class="center">
+					<span>Medical Cannabis</span>
+					<img src="img/DS&Fitz Banner.png" />
+				</div>
+				<div id="catch-phrase" class="center">
+					The galaxy&rsquo;s first philanthropic cannabis experience
+				</div>
+				
+				<a href="javascript:void(0)" id="impact-button" class="button orange-button center" onclick="goToPage(1)">MAKE A DIFFERENCE</a>
+			</div>
+			<div id="impact" class="page impact">
+				<div id="impact-love" class="center top-text">
+					We love impact.
+				</div>
+				<div id="impact-center" class="center">
+					<div id="impact-text" class="half-space small-text">
+						<p>That&rsquo;s why we&rsquo;re taking all our proceeds and giving them to select Canadian social enterprises that have committed themselves to making an impact in Canadian communties.</p>
+						
+						<p>Yep that&rsquo;s right.</p>
+						
+						<p>If you&rsquo;re reading this and you are a social enterprises or know one, do us a favor and enter your contact info on the right.</p>
+						
+						<p>We&rsquo;ll get in touch as soon as we can.</p>
+					</div>
+					<div id="impact-fields" class="half-space">
+						<form method="POST" action="php/impact.php">
+							<div>
+								<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+								  <input type="text" id="name-textfield" name="name" class="mdc-textfield__input">
+								  <label class="mdc-textfield__label" for="name-textfield">Name</label>
+								  <div class="mdc-textfield__bottom-line"></div>
+								</div>
+								<br/>
+								<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+								  <input type="text" id="organization-textfield" name="organization" class="mdc-textfield__input">
+								  <label class="mdc-textfield__label" for="organization-textfield">Organization Name</label>
+								  <div class="mdc-textfield__bottom-line"></div>
+								</div>
+								<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+								  <input type="text" id="email-textfield" name="email" class="mdc-textfield__input">
+								  <label class="mdc-textfield__label" for="email-textfield">Email</label>
+								  <div class="mdc-textfield__bottom-line"></div>
+								</div>
+								<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+								  <input type="text" id="phone-textfield" name="phone" class="mdc-textfield__input">
+								  <label class="mdc-textfield__label" for="phone-textfield">Phone</label>
+								  <div class="mdc-textfield__bottom-line"></div>
+								</div>
+							</div>
+							<a href="javascript:void(0)" onclick="sendFormData($('#impact-fields form'), 'impact')" class="center button orange-button" style="bottom: -30px;">GET IN TOUCH</a>
+						</form>
+					</div>
+				</div>
+			
+				<div id="impact-bottom" class="center page-bottom">
+					<span class="bottom-text">Head on down to check our products.</span>
+					<a href="javascript:void(0)" class="center button orange-button bottom-button" onclick="goToPage(2)">OUR PRODUCTS</a>
+				</div>
+			</div>
+			<div id="shop" class="page shop">
+				<div id="shop-top" class="center">
+					<span class="center top-text">Our Products</span>
+					<img src="img/DS&Fitz Banner.png" class="center"/>
+				</div>
+				
+				<div id="products" class="center">
+					<div>
+						<div class="product">
+							<img src="img/products/Ambrosia.png">
+							<span class="product-title">Ambrosia</span>
+							<br/>
+							<span class="small-text product-description">
+								Ambrosia is an indica-dominant strain that offers an equal ratio of THC and CBD, a cannabinoid combination that has been said to aid in the treatment of an array of 
+								symptoms including pain, anxiety and inflammation.
+							</span>
+							<br/>
+							<span class="percentages">5.1% THC | 10.7% CBD</span>
+							<div class="percentages pink-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Blueberry_Estate.png">
+							<span class="product-title">Blueberry Estate</span>
+							<br/>
+							<span class="small-text product-description">
+								Blueberry Estate is born of two highly respected and legendary strains: Bubblegum and Blueberry. The effects are a great balance of indica-rich heavy body properties
+								and the heady effects of sativa-dominant strains.
+							</span>
+							<br/>
+							<span class="percentages">17.73% THC | 0.04% CBD</span>
+							<div class="percentages yellow-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Embrace.png">
+							<span class="product-title">Embrace</span>
+							<br/>
+							<span class="small-text product-description">
+								You can depend on Embrace to provide clear-headed, alert sativa effects. This strain is said to be one of the most effective out there for treatment of pain and anxiety,
+								as CBD counteracts THC&rsquo;s paranoia while amplifying its painkilling properties.
+							</span>
+							<br/>
+							<span class="percentages">8.33% THC | 5.38% CBD</span>
+							<div class="percentages green-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Hustle_and_Grind_-_Kosher.png">
+							<span class="product-title">Hustle and Grind - Kosher</span>
+							<br/>
+							<span class="small-text product-description">
+								Originally from the Netherlands, & Grind relaxes both the mind and body in a dream-like state. This provides effective pain relief and eases insomnia.
+								Patients have also described Hustle & Grind as effective against depression and stress.
+							</span>
+							<br/>
+							<span class="percentages">16.83% THC | <0.001% CBD</span>
+							<div class="percentages pink-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Odyssey.png">
+							<span class="product-title">Odyssey</span>
+							<br/>
+							<span class="small-text product-description">
+								Odyssey has a pungent sea air aroma combined with a crisp, refreshing taste. Those who embark on the Odyssey find themselves feeling relaxed, at ease and looking at life with rosy cheeks.
+							</span>
+							<br/>
+							<span class="percentages">17.2% THC | 0.0% CBD</span>
+							<div class="percentages yellow-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Platinum_Mint_Cookies.png">
+							<span class="product-title">Platinum Mint Cookies</span>
+							<br/>
+							<span class="small-text product-description">
+								Platinum Mint Cookies is an OG Kush and Durban Poison hybrid whose reputation grew too large to stay within the borders of its California homeland.
+								A little goes a long way with this hybrid. Patients may look to Platinum Mint Cookies for symptom relief of severe pain, nausea and appetite loss.
+							</span>
+							<br/>
+							<span class="percentages">17.3% THC | 0.1% CBD</span>
+							<div class="percentages green-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Truffles_and_Cheese.png">
+							<span class="product-title">Truffles and Cheese</span>
+							<br/>
+							<span class="small-text product-description">
+								Truffles & Cheese became popular for its energetic, euphoric head effects combined with its impressive potential for pain relief.
+								Most patients experience mental relaxation without sedation, however it may hasten bedtime for some.
+							</span>
+							<br/>
+							<span class="percentages">21.87% THC | <0.001% CBD</span>
+							<div class="percentages pink-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Velvet_Night.png">
+							<span class="product-title">Velvet Night</span>
+							<br/>
+							<span class="small-text product-description">
+								Despite its powerful grape flavour and strong indica high, Velvet Night remains as smooth and calming as its name suggests.
+								This strain provides effective pain relief and eases insomnia. Patients have also described Velvet Night as effective against depression and stress.
+							</span>
+							<br/>
+							<span class="percentages">8.9% THC | 0.1% CBD</span>
+							<div class="percentages yellow-button">$14.99</div>
+						</div>
+					</div>
+					<div>
+						<div class="product">
+							<img src="img/products/Zen_Master.png">
+							<span class="product-title">Zen Master</span>
+							<br/>
+							<span class="small-text product-description">Uplifiting indica with a hint of rose scents</span>
+							<br/>
+							<span class="percentages">11.62% THC | <0.001% CBD</span>
+							<div class="percentages green-button">$14.99</div>
+						</div>
+					</div>
+				</div>
+				
+				<div id="shop-bottom" class="center page-bottom">
+					<span class="bottom-text">Like what you see?</span>
+					<a href="javascript:void(0)" class="center button orange-button bottom-button" onclick="goToPage(3)">REGISTER NOW</a>
+				</div>
+			</div>
+			<div id="register" class="page register">
+				<div id="register-top" class="center">
+					<span class="top-text">Get Registered</span>
+					<span id="register-promise">Same day registration, next day delivery</span>
+				</div>
+				<div id="register-form" class="center">
+					<form method="POST" action="php/register.php">
+						<div class="form-half" style="float: left;">
+							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							  <input type="text" id="register-name-textfield" name="name" class="mdc-textfield__input">
+							  <label class="mdc-textfield__label" for="register-name-textfield">First and Last Name</label>
+							  <div class="mdc-textfield__bottom-line"></div>
+							</div>
+							<br/>
+							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							  <input type="text" id="register-email-textfield" name="email" class="mdc-textfield__input">
+							  <label class="mdc-textfield__label" for="register-email-textfield">Email</label>
+							  <div class="mdc-textfield__bottom-line"></div>
+							</div>
+							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							  <input type="text" id="register-phone-textfield" name="phone" class="mdc-textfield__input">
+							  <label class="mdc-textfield__label" for="register-phone-textfield">Phone</label>
+							  <div class="mdc-textfield__bottom-line"></div>
+							</div>
+							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							  <input type="text" id="register-city-textfield" name="city" class="mdc-textfield__input">
+							  <label class="mdc-textfield__label" for="register-city-textfield">City/Town</label>
+							  <div class="mdc-textfield__bottom-line"></div>
+							</div>
+							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							  <input type="text" id="register-province-textfield" name="province" class="mdc-textfield__input">
+							  <label class="mdc-textfield__label" for="register-province-textfield">Province</label>
+							  <div class="mdc-textfield__bottom-line"></div>
+							</div>
+						</div>
+						<div id="register-right" class="form-half">
+							<div class="radio-container">
+								<label>Are you 25 years of age or older?</label>
+								<div style="float: right">
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-1" name="age" value="true" checked>
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-1-label" for="radio-1">Yes</label>
+									</div>
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="age" value="false">
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-2-label" for="radio-2">No</label>
+									</div>
+								</div>
+							</div>
+							<div class="radio-container">
+								<label>Do you have a documented medical condition?</label>
+								<div style="float: right">
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-3" name="condition" value="true" checked>
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-3-label" for="radio-3">Yes</label>
+									</div>
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-4" name="condition" value="false">
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-4-label" for="radio-4">No</label>
+									</div>
+								</div>
+							</div>
+							<div class="radio-container">
+								<label>Do you currently medicate with cannabis?</label>
+								<div style="float: right">
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-5" name="medicate" value="true" checked>
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-5-label" for="radio-5">Yes</label>
+									</div>
+									<div class="mdc-form-field">
+										<div class="mdc-radio">
+										  <input class="mdc-radio__native-control" type="radio" id="radio-6" name="medicate" value="false">
+										  <div class="mdc-radio__background">
+											<div class="mdc-radio__outer-circle"></div>
+											<div class="mdc-radio__inner-circle"></div>
+										  </div>
+										</div>
+										<label id="radio-6-label" for="radio-6">No</label>
+									</div>
+								</div>
+							</div>
+							<div id="referer-field" class="mdc-form-field">
+								<label>How did you hear about us?</label>
+								<select class="mdc-select" name="referer">
+									<option value="Website">Website</option>
+									<option value="Social Media">Social Media</option>
+									<option value="Pyshician/Health Care Praticioner">Pyshician/Health Care Praticioner</option>
+									<option value="Family/Friends/Co-worker">Family/Friends/Co-worker</option>
+									<option value="Sales Associate">Sales Associate</option>
+									<option value="Other">Other</option>
+								</select>
+							</div>
+						</div>
+						<a href="javascript:void(0)" onclick="sendFormData($('#register-form form'), 'register')" class="center button orange-button" style="bottom: -90px;">SEND</a>
+					</form>
+				</div>
+				<div id="register-producer">
+					<span>Registered with another Licensed Produced?</span><br>
+					<a href="javascript:void(0)" onclick="showModal()">Click here.</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="release-modal" class="center">
+			<a href="javascript:void(0)" onclick="hideModal()"><img src="img/close-btn.png"></img></a>
+			<div class="top-text" style="text-align: center;">Request for release of medical documents and records</div>
+			<p>Please complete the consent form below and our affiliate Patient Services team will assist you in obtaining your medical file.</p>
+			<form method="POST" action="php/release.php">
+				<div id="patient-information">
+					<p>Patient Information</p>
+					<div id="patient-fields" class="center inner-fields">
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-name-textfield" name="patient-name" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-name-textfield">Patient Name</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-birth-textfield" name="date-of-birth" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-birth-textfield">Date of Birth (MM/DD/YYYY)</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-phone-textfield" name="patient-phone" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-phone-textfield">Phone</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-email-textfield" name="patient-email" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-email-textfield">E-mail</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-province-textfield" name="province" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-province-textfield">Province</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+					</div>
+				</div>
+				<div id="medic-information">
+					<p>Physician/Clinic Information</p>
+					<div id="medic-fields" class="center inner-fields">
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-medic-name-textfield" name="medic-name" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-medic-name-textfield">Referring Physician or Clinic Name</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-medic-phone-textfield" name="medic-phone" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-medic-phone-textfield">Referring Physician or Clinic Phone</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-medic-email-textfield" name="medic-email" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-medic-email-textfield">Referring Physician or Clinic E-mail</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+					</div>
+				</div>
+				<div id="contract-information">
+					<p>Patient Consent</p>
+					<p id="contract">By signing this form, I authorize the gathering, use and release of any personal information, including my personal
+									 health information (including my current and compliant ACMPR Medical Document and also my medical file that is in your
+									 possession) by Patient Services for the purpose of pursuing the potential for coverage of medical cannabis therapy by 3rd
+									 party payers (Group Health Benefit Plans, Individual Health Benefit Plans, Government Subsidized Health Plans, Health Spending
+									 Accounts, Disability Compensation Plans, etc.) I also authorize Patient Services to communicate with me for the above-mentioned
+									 reasons, and I further consent to accept electronic communications from Patient Services that are comprised of information related
+									 to my reimbursement request. I recognize that I can remove my consent for any communications by providing notice to Patient Services
+									 at any time.</p>
+					<div id="contract-fields" class="center inner-fields">
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-contract-name-textfield" name="contract-name" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-contract-name-textfield">Print Name</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+						  <input type="text" id="release-contract-date-textfield" name="date" class="mdc-textfield__input">
+						  <label class="mdc-textfield__label" for="release-contract-date-textfield">Today's Date (MM/DD/YYYY)</label>
+						  <div class="mdc-textfield__bottom-line"></div>
+						</div>
+						<p>Patient Signature</p>
+						<div id="signature"></div>
+						<input id="release-contract-signature" name="signature" hidden=""></input>
+					</div>
+				</div>
+				<div style="position: relative">
+					<a href="javascript:void(0)" onclick="sendContractForm('impact')" class="center button orange-button" onclick="hideModal()">REGISTER</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
