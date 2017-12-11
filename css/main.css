@@ -115,10 +115,36 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 1000px) {
+	.navbar-link {
+		margin: 25px;
+	}
+}
+
+@media(max-width: 700px) and (orientation: landscape) {
 	.navbar-link {
 		font-size: 14pt;
 		margin: 20px;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+	#navbar {
+		top: 20px;
+		left: 20px;
+	}
+	
+	#navbar-links {
+		margin-right: 10%;
+	}
+	
+	.navbar-link {
+		font-size: 13pt;
+		margin: 5px;
+	}
+	
+	#logo {
+		height: 20%;
 	}
 }
 
@@ -136,10 +162,6 @@ img {
 		font-size: 10pt;
 		margin: 5px;
 	}
-	
-	#logo {
-		height: 20%;
-	}
 }
 
 .navbar-link:hover {
@@ -153,7 +175,7 @@ img {
 	width: 250px;
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 700px) and (orientation: landscape) {
 	#mission {
 		font-size: 10pt;
 	}
@@ -219,7 +241,18 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 1000px) {
+	#intro-central span {
+		font-size: 36pt;
+		margin-left: 24px;
+	}
+	
+	#catch-phrase {
+		font-size: 16pt;
+	}
+}
+
+@media(max-width: 700px) and (orientation: landscape) {
 	#intro-central span {
 		font-size: 30pt;
 		margin-left: 20px;
@@ -232,6 +265,24 @@ img {
 	
 	#impact-button {
 		bottom: 15px !important;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+	#intro-central {
+		top: 45%;
+		width: 70%;
+	}
+	
+	#intro-central span {
+		font-size: 27pt;
+		margin-left: 20px;
+	}
+	
+	#catch-phrase {
+		font-size: 12pt;
+		width: 65%;
+		top: 60%;
 	}
 }
 
@@ -297,9 +348,26 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 1000px) {
+	.top-text {
+		font-size: 36pt;
+	}
+}
+
+@media(max-width: 700px) and (orientation: landscape) {
 	.top-text {
 		font-size: 30pt;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+	#impact-love {
+		top: 13%;
+		width: 50%;
+	}
+	
+	.top-text {
+		font-size: 24pt;
 	}
 }
 
@@ -343,17 +411,6 @@ img {
 	height: 250px;
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
-	#impact-center {
-		top: 20%;
-	}
-	
-	#impact-text {
-		font-size: 10px;
-		height: 150px;
-	}
-}
-
 #impact-fields {
 	position: relative;
 	float: right;
@@ -370,24 +427,59 @@ img {
 	width: 100%;
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
-	.mdc-textfield {
-		margin-bottom: -15px !important;
-	}
-}
-
 #impact-fields .mdc-textfield > label {
 	font-size: 16pt;
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 700px) and (orientation: landscape) {
+	#impact-center {
+		top: 20%;
+	}
+	
+	#impact-text {
+		font-size: 10px;
+		height: 150px;
+	}
+	
 	#impact-fields {
 		height: 160px;
 		padding-top: 5px;
 	}
 	
+	.mdc-textfield {
+		margin-bottom: -15px !important;
+	}
+	
 	.mdc-textfield--upgraded {
 		height: 38px !important;
+	}
+	
+	#impact-fields .mdc-textfield > label {
+		font-size: 10pt;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait) {
+	#impact-center {
+		top: 30%;
+		width: 80%;
+	}
+	
+	#impact-text {
+		font-size: 12px;
+	}
+	
+	#impact-fields {
+		height: 165px;
+		transform: translateY(3%);
+	}
+	
+	#impact-fields > form > div {
+		top: -10px;
+	}
+	
+	.mdc-textfield--upgraded {
+		height: 15px !important;
 	}
 	
 	#impact-fields .mdc-textfield > label {
@@ -446,6 +538,11 @@ img {
 	height: 12%
 }
 
+.bottom-text {
+	font-family: Coolvetica;
+	font-size: 30pt;
+}
+
 @media(max-width: 1700px) {
 	.page-bottom {
 		bottom: -35px;
@@ -453,19 +550,18 @@ img {
 	}
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1000px) and (orientation: landscape) {
+	.bottom-text {
+		font-size: 26pt !important;
+	}
+}
+
+@media(max-width: 700px) and (orientation: landscape) {
 	.page-bottom {
 		bottom: -30px;
 		height: 16%
 	}
-}
-
-.bottom-text {
-	font-family: Coolvetica;
-	font-size: 30pt;
-}
-
-@media(max-width: 1000px) and (orientation: landscape) {
+	
 	.button {
 		width: 120px;
 		height: 30px;
@@ -483,6 +579,28 @@ img {
 	
 	.bottom-button {
 		bottom: -10px !important;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait){
+	.button {
+		width: 130px;
+		height: 25px;
+		font-size: 8pt;
+		line-height: 25px;
+	}
+	
+	.orange-button {
+		border-radius: 4px;
+	}
+	
+	.page-bottom {
+		bottom: 0px;
+		height: 10%
+	}
+	
+	.bottom-text {
+		font-size: 18pt !important;
 	}
 }
 
@@ -556,7 +674,18 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 1000px) {
+	#shop-top {
+		top: 15%;
+	}
+	
+	#shop-top img {
+		height: 30px;
+		margin-top: 40px;
+	}
+}
+
+@media(max-width: 700px) and (orientation: landscape) {
 	#shop-top {
 		top: 15%;
 	}
@@ -569,6 +698,24 @@ img {
 	#products {
 		top: 80%;
 		margin-left: 0px;
+		width: 70%;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait){
+	#shop-top {
+		top: 10%;
+		width: 50%;
+	}
+	
+	#shop-top img {
+		height: 18px;
+		margin-top: 20px;
+	}
+	
+	#products {
+		top: 75%;
+		margin-left: 35px;
 		width: 70%;
 	}
 }
@@ -661,7 +808,7 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 700px) and (orientation: landscape) {
 	.product-title {
 		font-size: 10pt;
 	}
@@ -685,6 +832,16 @@ img {
 	
 	.green-button {
 		width: 32px;
+	}
+}
+
+@media(max-width: 500px) and (orientation: portrait){
+	.product-title {
+		font-size: 17pt;
+	}
+	
+	.product-description {
+		font-size: 12pt;
 	}
 }
 
@@ -818,8 +975,22 @@ img {
 		font-size: 18pt;
 	}
 }
+
+@media(max-width: 1000px) {
+	#register-promise {
+		font-size: 13pt;
+	}
+	
+	#register-form {
+		top: 50%;
+	}
+	
+	#release-modal {
+		width: 70%;
+	}
+}
 			
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 700px) and (orientation: landscape) {
 	#register-top {
 		top: 20%;
 	}
@@ -882,14 +1053,14 @@ img {
 	}
 }
 
-@media(max-width: 400px) and (orientation: portrait){
+@media(max-width: 500px) and (orientation: portrait){
 	#register-top {
 		top: 10%;
-		width: 50% !important;
+		width: 52% !important;
 	}
 	
 	#register-promise {
-		font-size: 7pt;
+		font-size: 9pt;
 	}
 	
 	#register-form {
@@ -902,6 +1073,56 @@ img {
 	
 	#register-form .mdc-textfield {
 		height: 16px;
+	}
+	
+	#register-form .mdc-textfield__label{
+		font-size: 10pt;
+	}
+	
+	.radio-container label{
+		font-size: 10pt;
+	}
+
+	#referer-field label{
+		font-size: 10pt;
+	}
+
+	#referer-field select{
+		width: 35%;
+	}
+	
+	#register-form a {
+		bottom: -40px !important;
+	}
+	
+	#referer-field select {
+		font-size: 10pt;
+	}
+	
+	#register-producer {
+		bottom: 15px;
+		font-size: 14pt;
+	}
+	
+	#release-modal {
+		top: 52%;
+		width: 92%;
+		height: 92%;
+		padding-top: 15px;
+		padding-left: 15px;
+		padding-right: 15px;
+		z-index: 2;
+	}
+}
+
+@media(max-width: 400px) and (orientation: portrait){
+	#register-top {
+		top: 10%;
+		width: 50% !important;
+	}
+	
+	#register-promise {
+		font-size: 7pt;
 	}
 	
 	#register-form .mdc-textfield__label{
@@ -923,32 +1144,18 @@ img {
 	#referer-field label{
 		font-size: 8pt;
 	}
-
-	#referer-field select{
-		width: 35%;
-	}
-	
-	#register-form a {
-		bottom: -40px !important;
-	}
 	
 	#referer-field select {
 		font-size: 8pt;
 	}
 	
 	#register-producer {
-		bottom: 15px;
 		font-size: 12pt;
 	}
 	
 	#release-modal {
 		top: 51%;
-		width: 92%;
 		height: 90%;
-		padding-top: 15px;
-		padding-left: 15px;
-		padding-right: 15px;
-		z-index: 2;
 	}
 }
 
@@ -1012,7 +1219,7 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {	
+@media(max-width: 700px) and (orientation: landscape) {	
 	#release-modal > a > img {
 		height: 15%;
 	}
@@ -1030,11 +1237,25 @@ img {
 	}
 }
 
-@media(max-width: 400px) and (orientation: portrait){	
+@media(max-width: 500px) and (orientation: portrait){	
 	#release-modal > a > img {
 		height: 5%;
 	}
 	
+	#release-modal .top-text {
+		font-size: 20pt;
+	}
+	
+	#release-modal p {
+		font-size: 18px;
+	}
+	
+	#release-modal .mdc-textfield__label {
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 400px) and (orientation: portrait){	
 	#release-modal .top-text {
 		font-size: 18pt;
 	}
@@ -1088,7 +1309,7 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape) {
+@media(max-width: 700px) and (orientation: landscape) {
 	#patient-information {
 		max-height: 220px;
 	}
@@ -1118,7 +1339,7 @@ img {
 	}
 }
 
-@media(max-width: 400px) and (orientation: portrait) {
+@media(max-width: 500px) and (orientation: portrait) {
 	#patient-information {
 		max-height: 220px;
 	}
@@ -1136,15 +1357,21 @@ img {
 	}
 	
 	#contract-information {
+		max-height: 550px;
+	}
+	
+	#contract-fields {
+		margin-top: 115px;
+	}
+}
+
+@media(max-width: 400px) and (orientation: portrait) {
+	#contract-information {
 		max-height: 415px;
 	}
 	
 	#contract {
 		font-size: 7pt !important;
-	}
-	
-	#contract-fields {
-		margin-top: 115px;
 	}
 }
 
@@ -1193,7 +1420,7 @@ img {
 	}
 }
 
-@media(max-width: 1000px) and (orientation: landscape){
+@media(max-width: 700px) and (orientation: landscape){
 	#dialog {
 		top: 25%;
 		height: 25%;

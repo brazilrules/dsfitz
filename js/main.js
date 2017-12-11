@@ -95,29 +95,6 @@ $(document).ready(function () {
 			img.src = newUrl;
 		});
 	}
-	
-	$('#products').slick({
-		slidesToShow: 3,
-		slidesToScroll: 3,
-		prevArrow: '<a class="slick-prev"><img src="img/left-arrow.png"></a>',
-		nextArrow: '<a class="slick-next"><img src="img/right-arrow.png"></a>',
-		responsive: [
-			{
-				breakpoint: 1000,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			},
-			{
-				breakpoint: 400,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-		]
-	});
 				
 	$(window).resize(function () {
 		if (window.innerHeight < screenHeight && window.innerHeight < screenWidth
@@ -133,6 +110,8 @@ $(document).ready(function () {
 		$("#signature").jSignature({color:"#000", height: 100, width: 220, "background-color": "white"});
 	} else if(screenWidth < 400) {
 		$("#signature").jSignature({color:"#000", height: 100, width: 250, "background-color": "white"});
+	} else if(screenWidth < 500) {
+		$("#signature").jSignature({color:"#000", height: 100, width: 300, "background-color": "white"});
 	} else if (screenWidth < 1000) {
 		$("#signature").jSignature({color:"#000", height: 100, width: 350, "background-color": "white"});
 	} else if (screenWidth < 1200) {
@@ -185,7 +164,7 @@ function slick() {
 		nextArrow: '<a class="slick-next"><img src="img/right-arrow.png"></a>',
 		responsive: [
 			{
-				breakpoint: 1000,
+				breakpoint: 700,
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1
