@@ -8,6 +8,11 @@ img {
 	width: auto\9; /* ie8 */
 }
 
+.social-media {
+	height: 50%;
+	margin: 6px;
+}
+
 .mdc-textfield__input {
 	border-bottom-color: white !important;
 	color: white !important;
@@ -36,6 +41,23 @@ img {
 
 .radio-container .mdc-radio__inner-circle {
 	background-color: white !important;
+}
+
+.checkbox {
+	margin-left: -10px;
+	margin-top: 20px;
+}
+
+.mdc-checkbox
+.mdc-checkbox__native-control:enabled:not(:checked):not(:indeterminate)~.mdc-checkbox__background
+{
+	border-color: lightgrey !important;
+	background-color: white !important;
+}
+
+.mdc-checkbox__label {
+	color: white;
+	width: 60%;
 }
 
 @font-face {
@@ -884,7 +906,7 @@ img {
 }
 
 #register-form {
-	top: 55%;
+	top: 40%;
 	width: 35%;
 }
 
@@ -918,11 +940,16 @@ img {
 
 #register-producer {
 	position: absolute;
-	right: 30px;
-	bottom: 30px;
-	border-bottom: 1px solid white;
+	right: 50px;
+	bottom: 50px;
+	//border-bottom: 1px solid white;
 	font-family: Coolvetica;
 	font-size: 15pt;
+	text-align: right;
+}
+
+#register-bottom {
+	bottom: 10%;
 }
 
 #register-producer a {
@@ -958,11 +985,21 @@ img {
 	}
 	
 	#register-form {
-		width: 70%;
+		top: 45%;
+		width: 45%;
 	}
 	
-	#register-right {
+	#register-bottom {
+		bottom: 1%;
+	}
+	
+	/*#register-right {
 		margin-top: 3%;
+	}*/
+	
+	#register-producer {
+		right: 30px;
+		bottom: 30px;
 	}
 }
 
@@ -974,6 +1011,10 @@ img {
 	#register-promise {
 		font-size: 18pt;
 	}
+	
+	#register-form {
+		width: 60%;
+	}
 }
 
 @media(max-width: 1000px) {
@@ -983,6 +1024,10 @@ img {
 	
 	#register-form {
 		top: 50%;
+	}
+	
+	.social-media {
+		height: 45%;
 	}
 	
 	#release-modal {
@@ -1000,7 +1045,7 @@ img {
 	}
 	
 	#register-form {
-		top: 55%;
+		top: 47%;
 		width: 80%;
 	}
 	
@@ -1037,6 +1082,18 @@ img {
 		bottom: -45px !important;
 	}
 	
+	.mdc-checkbox__label {
+		font-size: 8pt;
+	}
+	
+	#register-bottom {
+		bottom: -8%;
+	}
+	
+	.social-media {
+		height: 45%;
+	}
+	
 	#register-producer {
 		bottom: 10px;
 		right: 10px;
@@ -1064,7 +1121,8 @@ img {
 	}
 	
 	#register-form {
-		top: 50%;
+		top: 40%;
+		width: 70%;
 	}
 	
 	#register-right {
@@ -1097,6 +1155,15 @@ img {
 	
 	#referer-field select {
 		font-size: 10pt;
+	}
+	
+	.mdc-checkbox__label {
+		width: 100%;
+		font-size: 8pt;
+	}
+	
+	#register-bottom {
+		bottom: 10%;
 	}
 	
 	#register-producer {
@@ -1147,6 +1214,14 @@ img {
 	
 	#referer-field select {
 		font-size: 8pt;
+	}
+	
+	.mdc-checkbox__label {
+		font-size: 6pt;
+	}
+	
+	.social-media {
+		height: 30%;
 	}
 	
 	#register-producer {

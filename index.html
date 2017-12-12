@@ -39,7 +39,7 @@
 					<a href="javascript:void(0)" class="navbar-link" onclick="goToPage(2)">shop</a>
 					<a href="javascript:void(0)" class="navbar-link" onclick="goToPage(3)">register</a>
 					<a href="https://shop.thehydropothecary.com/login" class="navbar-link">log in</a>
-					<a href="https://medium.com/@adam_271" class="navbar-link">blog</a>
+					<a href="https://medium.com/@dsandfitz" class="navbar-link">blog</a>
 				</div>
 			</div>
 			<div id="intro" class="page intro">
@@ -228,7 +228,10 @@
 							<img src="img/products/Zen_Master.png">
 							<span class="product-title">Zen Master</span>
 							<br/>
-							<span class="small-text product-description">Uplifiting indica with a hint of rose scents</span>
+							<span class="small-text product-description">
+							Zen Master is a popular indica cross created out of two landrace strains from different parts of the Hindu Kush region.
+							During maturation the plant produces a subtle earthy, citrus smell with a hint of incense, which is often described as a vintage flavor.
+							</span>
 							<br/>
 							<span class="percentages">11.62% THC | <0.001% CBD</span>
 							<div class="percentages green-button">$14.99</div>
@@ -248,10 +251,10 @@
 				</div>
 				<div id="register-form" class="center">
 					<form method="POST" action="php/register.php">
-						<div class="form-half" style="float: left;">
+						<!--<div class="form-half" style="float: left;">-->
 							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
 							  <input type="text" id="register-name-textfield" name="name" class="mdc-textfield__input">
-							  <label class="mdc-textfield__label" for="register-name-textfield">First and Last Name</label>
+							  <label class="mdc-textfield__label" for="register-name-textfield">Name</label>
 							  <div class="mdc-textfield__bottom-line"></div>
 							</div>
 							<br/>
@@ -265,7 +268,24 @@
 							  <label class="mdc-textfield__label" for="register-phone-textfield">Phone</label>
 							  <div class="mdc-textfield__bottom-line"></div>
 							</div>
-							<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
+							<div class="mdc-form-field checkbox">
+								<div class="mdc-checkbox">
+								  <input type="checkbox"
+										 class="mdc-checkbox__native-control"/>
+								  <div class="mdc-checkbox__background">
+									<svg class="mdc-checkbox__checkmark"
+										 viewBox="0 0 24 24">
+									  <path class="mdc-checkbox__checkmark__path"
+											fill="none"
+											stroke="white"
+											d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+									</svg>
+									<div class="mdc-checkbox__mixedmark"></div>
+								  </div>
+								</div>
+								<label class="mdc-checkbox__label" for="my-checkbox">I allow DS&Fitz to contact me with important updates including account information and medical information.</label>
+							</div>
+							<!--<div class="mdc-textfield"  data-mdc-auto-init="MDCTextfield">
 							  <input type="text" id="register-city-textfield" name="city" class="mdc-textfield__input">
 							  <label class="mdc-textfield__label" for="register-city-textfield">City/Town</label>
 							  <div class="mdc-textfield__bottom-line"></div>
@@ -274,9 +294,9 @@
 							  <input type="text" id="register-province-textfield" name="province" class="mdc-textfield__input">
 							  <label class="mdc-textfield__label" for="register-province-textfield">Province</label>
 							  <div class="mdc-textfield__bottom-line"></div>
-							</div>
-						</div>
-						<div id="register-right" class="form-half">
+							</div>-->
+						<!--</div>-->
+						<!--<div id="register-right" class="form-half">
 							<div class="radio-container">
 								<label>Are you 25 years of age or older?</label>
 								<div style="float: right">
@@ -363,13 +383,22 @@
 									<option value="Other">Other</option>
 								</select>
 							</div>
-						</div>
-						<a href="javascript:void(0)" onclick="sendFormData($('#register-form form'), 'register')" class="center button orange-button" style="bottom: -90px;">SEND</a>
+						</div>-->
+						<a href="javascript:void(0)" onclick="sendFormData($('#register-form form'), 'register')" class="center button orange-button" style="bottom: -90px;">GET REGISTERED</a>
 					</form>
 				</div>
+				<div id="register-bottom" class="center page-bottom">
+					<span class="bottom-text">Let&rsquo;s stay in touch</span><br>
+					<a href="https://twitter.com/dsandfitz"><img class="social-media" src="img/twitter.svg"></img></a>
+					<a href="https://www.facebook.com/dsandfitz/"><img class="social-media" src="img/facebook.svg"></img></a>
+					<a href=""><img class="social-media" src="img/youtube.svg"></img></a>
+					<a href=""><img class="social-media" src="img/instagram.svg"></img></a>
+				</div>
 				<div id="register-producer">
-					<span>Registered with another Licensed Produced?</span><br>
-					<a href="javascript:void(0)" onclick="showModal()">Click here.</a>
+					<span>&copy; Copyright 2017. All Rights Reserved</span><br>
+					<span>D.S. & Fitz</span>
+					<!--<span>Registered with another Licensed Produced?</span><br>
+					<a href="javascript:void(0)" onclick="showModal()">Click here.</a>-->
 				</div>
 			</div>
 		</div>
